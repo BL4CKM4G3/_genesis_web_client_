@@ -26,29 +26,39 @@
               <button
                 type="button"
                 class="nes-btn is-normal h-10"
-                onclick="document.getElementById('dialog-dark').showModal();"
+                onclick="document.getElementById('dialog-api').showModal();"
               >
                 Api
               </button>
-              <dialog class="nes-dialog is-dark" id="dialog-dark">
+              <dialog class="nes-dialog is-dark" id="dialog-api">
                 <p class="title">Api Actions</p>
                 <form method="dialog">
-                  <button type="button" class="nes-btn is-normal">
-                    Primary
-                  </button>
-                  <button type="button" class="nes-btn is-normal">
-                    Primary
-                  </button>
-                  <button type="button" class="nes-btn is-normal">
-                    Primary
-                  </button>
-                  <button type="button" class="nes-btn is-normal">
-                    Primary
-                  </button>
-                  <menu class="dialog-menu">
-                    <button class="nes-btn">Cancel</button>
-                    <button class="nes-btn is-primary">Confirm</button>
-                  </menu>
+                  <div class="d-flex row">
+                    <div class="d-flex col">
+                      <button type="button" class="nes-btn is-error">
+                        Config
+                      </button>
+                      <button type="button" class="nes-btn is-normal">
+                        Stats
+                      </button>
+                    </div>
+                    <div class="d-flex col">
+                      <button type="button" class="nes-btn is-normal">
+                        Hosts
+                      </button>
+                      <button type="button" class="nes-btn is-normal">
+                        Actions
+                      </button>
+                    </div>
+                  </div>
+                  <div class="d-flex row">
+                    <div class="d-flex col">
+                      <menu class="dialog-menu">
+                        <button class="nes-btn">Cancel</button>
+                        <button class="nes-btn is-primary">Confirm</button>
+                      </menu>
+                    </div>
+                  </div>
                 </form>
               </dialog>
             </section>
@@ -56,14 +66,23 @@
               <button
                 type="button"
                 class="nes-btn is-normal h-10"
-                onclick="document.getElementById('dialog-dark').showModal();"
+                onclick="document.getElementById('dialog-db').showModal();"
               >
                 Database
               </button>
-              <dialog class="nes-dialog is-dark" id="dialog-dark">
+              <dialog class="nes-dialog is-dark" id="dialog-db">
                 <form method="dialog">
-                  <p class="title">Dark dialog</p>
-                  <p>Alert: this is a dialog.</p>
+                  <p class="title">Database:</p>
+                  <div class="d-flex row">
+                    <div class="d-flex col">
+                      <button class="nes-btn is-primary">Restore</button>
+                      <button class="nes-btn is-error">Drop</button>
+                    </div>
+                    <div class="d-flex col">
+                      <button class="nes-btn is-primary">Inspect</button>
+                      <button class="nes-btn is-primary">Rules</button>
+                    </div>
+                  </div>
                   <menu class="dialog-menu">
                     <button class="nes-btn">Cancel</button>
                     <button class="nes-btn is-primary">Confirm</button>
@@ -77,14 +96,23 @@
               <button
                 type="button"
                 class="nes-btn is-normal h-10"
-                onclick="document.getElementById('dialog-dark').showModal();"
+                onclick="document.getElementById('dialog-git').showModal();"
               >
                 Git
               </button>
-              <dialog class="nes-dialog is-dark" id="dialog-dark">
+              <dialog class="nes-dialog is-dark" id="dialog-git">
                 <form method="dialog">
-                  <p class="title">Dark dialog</p>
-                  <p>Alert: this is a dialog.</p>
+                  <p class="title">Git</p>
+                  <div class="d-flex row">
+                    <div class="d-flex col">
+                      <button class="nes-btn is-primary">Fetch</button>
+                      <button class="nes-btn is-primary">Checkout</button>
+                    </div>
+                    <div class="d-flex col">
+                      <button class="nes-btn is-primary">Update Branch</button>
+                      <button class="nes-btn is-primary">Branches</button>
+                    </div>
+                  </div>
                   <menu class="dialog-menu">
                     <button class="nes-btn">Cancel</button>
                     <button class="nes-btn is-primary">Confirm</button>
@@ -96,14 +124,13 @@
               <button
                 type="button"
                 class="nes-btn is-normal h-10"
-                onclick="document.getElementById('dialog-dark').showModal();"
+                onclick="document.getElementById('dialog-charts').showModal();"
               >
                 Charts
               </button>
-              <dialog class="nes-dialog is-dark" id="dialog-dark">
+              <dialog class="nes-dialog is-dark" id="dialog-charts">
                 <form method="dialog">
-                  <p class="title">Dark dialog</p>
-                  <p>Alert: this is a dialog.</p>
+                  <p class="title">Charts:</p>
                   <menu class="dialog-menu">
                     <button class="nes-btn">Cancel</button>
                     <button class="nes-btn is-primary">Confirm</button>
@@ -118,9 +145,7 @@
             <button type="button" class="nes-btn is-primary h-10">
               Import Api
             </button>
-            <button type="button" class="nes-btn is-error h-10">
-              Config
-            </button>
+            <button type="button" class="nes-btn is-error h-10">Config</button>
           </div>
           <div class="d-flex row w-25 h-25">
             <button type="button" class="nes-btn is-error h-10">
